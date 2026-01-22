@@ -1,33 +1,57 @@
-# Previsão de Séries Temporais com RNN (Dataset CTA)
+# Projetos de Introdução à Inteligência Artificial - Le CNAM 🇫🇷
 
-Este projeto consiste na implementação e treino de Redes Neurais Recorrentes (RNN) para a previsão de séries temporais, utilizando dados de passageiros da **CTA (Chicago Transit Authority)**. O objetivo principal é comparar diferentes arquiteturas de modelos e identificar a configuração mais eficiente para prever a procura de transporte.
+Este repositório contém os projetos desenvolvidos durante o curso de **Introdução à Inteligência Artificial** no **Conservatoire National des Arts et Métiers (Le CNAM)**, em Paris, como parte do meu programa de intercâmbio.
 
-## 📋 Descrição do Projeto
+Os projetos abrangem áreas fundamentais de Deep Learning e Machine Learning, focando tanto em aprendizagem supervisionada para séries temporais quanto em aprendizagem não supervisionada para visão computacional.
 
-O projeto aborda o ciclo completo de desenvolvimento de um modelo de Deep Learning:
-1.  **Pré-processamento de Dados:** Limpeza, tratamento de duplicados, renomeação de colunas e formatação de séries temporais.
-2.  **Engenharia de Features:** Preparação dos dados para entrada em modelos sequenciais.
-3.  **Desenvolvimento de Modelos:** Experimentação com múltiplas arquiteturas de RNN utilizando a biblioteca Keras/TensorFlow.
-4.  **Avaliação:** Análise de métricas de erro (MAE) e comportamento das curvas de aprendizagem (overfitting vs. generalização).
+---
 
-## 🛠️ Tecnologias Utilizadas
+## 1. Previsão de Séries Temporais com RNN (Dataset CTA)
+
+Implementação e treino de Redes Neurais Recorrentes (RNN) para prever a procura de passageiros na **CTA (Chicago Transit Authority)**.
+
+### 📋 Destaques do Projeto
+* **Engenharia de Features:** Transformação de dados brutos de séries temporais em janelas de entrada para modelos sequenciais.
+* **Arquitetura Ideal:** 2 camadas ocultas com **16 neurónios** cada, selecionada após testes para evitar o overfitting e garantir a generalização.
+* **Métrica de Sucesso:** Avaliação rigorosa através do Erro Médio Absoluto (MAE).
+
+
+
+---
+
+## 2. Aprendizagem Não Supervisionada com Fashion MNIST
+
+Exploração de técnicas de clustering e redução de dimensionalidade aplicadas ao dataset **Fashion MNIST**, visando agrupar automaticamente diferentes categorias de vestuário.
+
+### 📋 Destaques do Projeto
+* **Processamento de Imagem:** Normalização e preparação de vetores de 784 dimensões (28x28 píxeis).
+* **Redução de Dimensionalidade:** Aplicação de **PCA** e **t-SNE** para visualização de dados e melhoria da eficiência dos algoritmos de agrupamento.
+* **Clustering:** Implementação e comparação de algoritmos como **K-Means** e **DBSCAN**.
+* **Resultados:** Identificação de padrões estruturais nas imagens, alcançando uma configuração de modelo estável com baixa lacuna de generalização.
+
+
+
+---
+
+## 🛠️ Tecnologias e Ferramentas
 
 * **Linguagem:** Python 3.7+
-* **Bibliotecas Principais:**
-    * `TensorFlow` / `Keras` (Modelagem Deep Learning)
-    * `Pandas` e `NumPy` (Manipulação de dados)
-    * `Matplotlib` (Visualização)
-    * `Scikit-Learn` (Escalonamento e métricas)
+* **Frameworks de ML/DL:** `TensorFlow`, `Keras`, `Scikit-Learn`.
+* **Processamento de Dados:** `Pandas`, `NumPy`.
+* **Visualização:** `Matplotlib`, `Seaborn`.
+* **Ambiente:** Google Colab / VS Code.
 
-## 🏗️ Arquitetura do Modelo
+## 🚀 Como Executar os Notebooks
 
-Após a fase de experimentação, foi determinada a seguinte configuração como a ideal:
-* **Tipo:** Rede Neural Recorrente (RNN).
-* **Estrutura:** 2 camadas ocultas com **16 neurónios** cada.
-* **Justificação:** Embora modelos com mais neurónios (ex: 64) tenham apresentado um MAE ligeiramente inferior, a arquitetura de 16 neurónios foi selecionada por apresentar um melhor equilíbrio, evitando o **overfitting** e mantendo uma complexidade computacional reduzida.
+1.  Clone o repositório:
+    ```bash
+    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+    ```
+2.  Instale as dependências:
+    ```bash
+    pip install tensorflow scikit-learn pandas numpy matplotlib
+    ```
+3.  Abra os ficheiros `.ipynb` no seu editor de preferência (VS Code ou Jupyter) para visualizar as análises e resultados.
 
-## 📈 Resultados e Observações
-
-* **Métrica de Avaliação:** Erro Médio Absoluto (MAE).
-* **Comportamento de Treino:** Foi observado que, em certas iterações, a perda de validação foi inferior à de treino. Isto foi atribuído à mecânica de cálculo do Keras (onde a perda de treino é a média durante a época e a de validação é calculada no final) ou à distribuição favorável dos dados no split de validação.
-* **Ajustes Futuros:** Identificou-se a necessidade de ajustar a *learning rate* em iterações posteriores para estabilizar a convergência.
+---
+*Desenvolvido como parte do currículo acadêmico no Le CNAM (2025-2026).*
