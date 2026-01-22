@@ -2,7 +2,7 @@
 
 Este repositório contém os projetos desenvolvidos durante o curso de **Introdução à Inteligência Artificial** no **Conservatoire National des Arts et Métiers (Le CNAM)**, em Paris, como parte do meu programa de intercâmbio.
 
-Os projetos abrangem áreas fundamentais de Deep Learning e Machine Learning, focando tanto em aprendizagem supervisionada para séries temporais quanto em aprendizagem não supervisionada para visão computacional.
+Os projetos abrangem a área de Artficial Neural Networks, focando tanto em aprendizagem supervisionada para séries temporais quanto em aprendizagem supervisionada para classificação de imagens usando multilayer perceptrons(MLP).
 
 ---
 
@@ -19,15 +19,14 @@ Implementação e treino de Redes Neurais Recorrentes (RNN) para prever a procur
 
 ---
 
-## 2. Aprendizagem Não Supervisionada com Fashion MNIST
+## 2. Classificação de Imagens com MLP (Fashion MNIST)
 
-Exploração de técnicas de clustering e redução de dimensionalidade aplicadas ao dataset **Fashion MNIST**, visando agrupar automaticamente diferentes categorias de vestuário.
+Desenvolvimento e validação de uma **Multi-Layer Perceptron (MLP)** para a classificação automatizada de artigos de vestuário utilizando o dataset **Fashion MNIST**.
 
 ### 📋 Destaques do Projeto
-* **Processamento de Imagem:** Normalização e preparação de vetores de 784 dimensões (28x28 píxeis).
-* **Redução de Dimensionalidade:** Aplicação de **PCA** e **t-SNE** para visualização de dados e melhoria da eficiência dos algoritmos de agrupamento.
-* **Clustering:** Implementação e comparação de algoritmos como **K-Means** e **DBSCAN**.
-* **Resultados:** Identificação de padrões estruturais nas imagens, alcançando uma configuração de modelo estável com baixa lacuna de generalização.
+**Busca de Hiperparâmetros:** Implementação de uma estrutura experimental para testar variações na arquitetura da rede (número de camadas e neurónios por camada).
+* **Performance:** O modelo final alcançou aproximadamente **88% de acurácia** no conjunto de teste, apresentando um *generalization gap* reduzido (~2%).
+* **Visualização:** Uso de Heatmaps para analisar a relação entre a complexidade do modelo e a precisão obtida.
 
 
 
