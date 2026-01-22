@@ -26,7 +26,7 @@ Exploração de técnicas de clustering e redução de dimensionalidade aplicada
 ### 📋 Destaques do Projeto
 * **Processamento de Imagem:** Normalização e preparação de vetores de 784 dimensões (28x28 píxeis).
 * **Redução de Dimensionalidade:** Aplicação de **PCA** e **t-SNE** para visualização de dados e melhoria da eficiência dos algoritmos de agrupamento.
-* **Clustering:** Implementação e comparação de algoritmos como **K-Means** e **DBSCAN**.
+* **Clustering:** Implementação do algoritmo **K-Means**
 * **Resultados:** Identificação de padrões estruturais nas imagens, alcançando uma configuração de modelo estável com baixa lacuna de generalização.
 
 
