@@ -31,12 +31,3 @@ Após a fase de experimentação, foi determinada a seguinte configuração como
 * **Métrica de Avaliação:** Erro Médio Absoluto (MAE).
 * **Comportamento de Treino:** Foi observado que, em certas iterações, a perda de validação foi inferior à de treino. Isto foi atribuído à mecânica de cálculo do Keras (onde a perda de treino é a média durante a época e a de validação é calculada no final) ou à distribuição favorável dos dados no split de validação.
 * **Ajustes Futuros:** Identificou-se a necessidade de ajustar a *learning rate* em iterações posteriores para estabilizar a convergência.
-
-## 🚀 Como Utilizar
-
-1.  Certifica-te de que tens o Python instalado.
-2.  Instala as dependências necessárias:
-    ```bash
-    pip install tensorflow pandas numpy matplotlib scikit-learn
-    ```
-3.  Executa o notebook `RNN_training.ipynb` num ambiente Jupyter ou Google Colab.
