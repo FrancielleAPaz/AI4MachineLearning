@@ -12,7 +12,7 @@ Implementação e treino de Redes Neurais Recorrentes (RNN) para prever a procur
 
 ### 📋 Destaques do Projeto
 * **Engenharia de Features:** Transformação de dados brutos de séries temporais em janelas de entrada para modelos sequenciais.
-* **Arquitetura Ideal:** 2 camadas ocultas com **16 neurónios** cada, selecionada após testes para evitar o overfitting e garantir a generalização.
+* **Arquitetura Ideal:** 2 camadas ocultas com **16 neurônios** cada, selecionada após testes para evitar o overfitting e garantir a generalização.
 * **Métrica de Sucesso:** Avaliação rigorosa através do Erro Médio Absoluto (MAE).
 
 
